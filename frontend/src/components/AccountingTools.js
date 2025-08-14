@@ -615,6 +615,8 @@ const AccountingTools = () => {
                 ))}
               </div>
             </CardContent>
+          </Card>
+        </TabsContent>
       </Tabs>
     </div>
   );
