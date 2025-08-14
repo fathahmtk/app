@@ -13,10 +13,14 @@ import {
   DollarSign,
   FileSpreadsheet,
   Building2,
-  Info
+  Info,
+  ExternalLink,
+  Star,
+  Sparkles,
+  Zap
 } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
-import { mockAccountingData } from "../data/mockData";
+import { mockAccountingData, advancedAccountingTools } from "../data/mockData";
 
 const AccountingTools = () => {
   const { toast } = useToast();
