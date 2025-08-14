@@ -474,7 +474,147 @@ const AccountingTools = () => {
               </div>
             </CardContent>
           </Card>
+
+          {/* Advanced Accounting Software */}
+          <div className="mt-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+              <Sparkles className="h-6 w-6 text-purple-600" />
+              Premium Accounting Solutions
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {advancedAccountingTools?.businessSoftware?.slice(0, 9).map((software, index) => (
+                <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <CardHeader>
+                    <div className="flex items-start justify-between">
+                      <CardTitle className="text-lg flex items-center gap-2">
+                        <FileSpreadsheet className="h-5 w-5 text-blue-600" />
+                        {software.name}
+                      </CardTitle>
+                      {software.isFree && (
+                        <Badge className="bg-green-100 text-green-800 border-green-300">
+                          FREE
+                        </Badge>
+                      )}
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-600 mb-3 line-clamp-2">{software.description}</p>
+                    <div className="space-y-2 mb-4">
+                      <div className="text-xs font-medium text-gray-500">Key Features:</div>
+                      <div className="flex flex-wrap gap-1">
+                        {software.features?.slice(0, 3).map((feature, idx) => (
+                          <Badge key={idx} variant="outline" className="text-xs">
+                            {feature}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="text-sm">
+                        <span className="font-medium">Pricing:</span>
+                        <span className="text-gray-600 ml-1">{software.pricing}</span>
+                      </div>
+                      {software.trial && (
+                        <div className="text-sm">
+                          <span className="font-medium">Trial:</span>
+                          <span className="text-gray-600 ml-1">{software.trial}</span>
+                        </div>
+                      )}
+                    </div>
+                    {software.website && (
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="w-full mt-3"
+                        onClick={() => {
+                          toast({
+                            title: "External Link",
+                            description: `Opening ${software.name} website`,
+                            duration: 3000
+                          });
+                        }}
+                      >
+                        <ExternalLink className="h-4 w-4 mr-1" />
+                        Visit Website
+                      </Button>
+                    )}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
         </TabsContent>
+
+        <TabsContent value="advanced" className="space-y-6">
+          {/* Document Templates */}
+          <Card className="border-0 shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-xl text-purple-700 flex items-center gap-2">
+                <FileSpreadsheet className="h-5 w-5" />
+                Document Templates & Generators
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {advancedAccountingTools?.documentTemplates?.map((template, index) => (
+                  <div key={index} className="p-4 border rounded-lg hover:bg-purple-50 transition-colors group">
+                    <div className="flex items-start justify-between mb-2">
+                      <h4 className="font-medium text-gray-800 group-hover:text-purple-700">
+                        {template.name}
+                      </h4>
+                      <Star className="h-4 w-4 text-yellow-500" />
+                    </div>
+                    <p className="text-sm text-gray-600 mb-3">{template.description}</p>
+                    <div className="flex items-center justify-between">
+                      <Badge variant="outline" className="text-xs">
+                        {template.category}
+                      </Badge>
+                      <Button size="sm" variant="ghost" className="h-8 px-2">
+                        <Zap className="h-3 w-3" />
+                      </Button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Advanced Business Tools */}
+          <Card className="border-0 shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-xl text-indigo-700 flex items-center gap-2">
+                <Building2 className="h-5 w-5" />
+                Professional Business Tools
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {advancedAccountingTools?.businessTools?.map((tool, index) => (
+                  <Card key={index} className="border border-gray-200 hover:border-indigo-300 transition-colors">
+                    <CardHeader className="pb-3">
+                      <CardTitle className="text-base flex items-center gap-2">
+                        <Calculator className="h-4 w-4 text-indigo-600" />
+                        {tool.name}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <p className="text-sm text-gray-600 mb-3">{tool.description}</p>
+                      <ul className="space-y-1">
+                        {tool.features?.map((feature, idx) => (
+                          <li key={idx} className="text-xs text-gray-500 flex items-center gap-2">
+                            <div className="w-1 h-1 bg-indigo-400 rounded-full"></div>
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+                      <Button size="sm" className="w-full mt-3 bg-indigo-600 hover:bg-indigo-700">
+                        Use Tool
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </CardContent>
       </Tabs>
     </div>
   );
