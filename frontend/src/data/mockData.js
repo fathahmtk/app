@@ -436,3 +436,177 @@ export const mockQatarData = {
     }
   ]
 };
+
+export const advancedAccountingTools = {
+  businessSoftware: [
+    {
+      name: "Zoho Books",
+      description: "Comprehensive accounting software for growing businesses. Send invoices, generate 1099 reports, and manage expenses, projects, & inventory.",
+      website: "https://www.zoho.com/us/books/",
+      features: ["Receivables", "Payables", "Inventory management", "Project management", "Multi-currency support"],
+      pricing: "FREE Plan available for small businesses",
+      trial: "14-day free trial for paid plans",
+      category: "Full Accounting Suite",
+      isFree: true
+    },
+    {
+      name: "Wave Accounting",
+      description: "100% free accounting software for small businesses. Includes invoicing, payments, and financial reporting.",
+      website: "https://www.waveapps.com/",
+      features: ["Free invoicing", "Free accounting", "Receipt scanning", "Financial reports", "Bank connections"],
+      pricing: "100% FREE forever",
+      trial: "No trial needed - completely free",
+      category: "Free Accounting Suite",
+      isFree: true
+    },
+    {
+      name: "Melio",
+      description: "Specializes in accounts payable, streamlining vendor payments and optimizing cash flow. Integrates with QuickBooks and Xero.",
+      website: "https://meliopayments.com/",
+      features: ["Accounts payable", "Vendor payments", "QuickBooks integration", "Xero integration", "Cash flow optimization"],
+      pricing: "FREE Forever plan available",
+      trial: "Free Trial available",
+      category: "Accounts Payable",
+      isFree: true
+    },
+    {
+      name: "GnuCash",
+      description: "Free, open-source personal and small-business financial-accounting software. Double-entry bookkeeping system.",
+      website: "https://www.gnucash.org/",
+      features: ["Double-entry bookkeeping", "Stock/bond/mutual fund accounts", "Small-business accounting", "Reports and graphs"],
+      pricing: "100% FREE and open-source",
+      trial: "No trial needed - completely free",
+      category: "Open Source Accounting",
+      isFree: true
+    },
+    {
+      name: "Manager",
+      description: "Free accounting software for small businesses. Desktop and cloud versions available.",
+      website: "https://www.manager.io/",
+      features: ["Multi-currency", "Inventory tracking", "Financial statements", "Tax compliance", "Bank reconciliation"],
+      pricing: "FREE for desktop version",
+      trial: "Cloud version has free trial",
+      category: "Free Desktop Accounting",
+      isFree: true
+    },
+    {
+      name: "Oracle NetSuite ERP",
+      description: "A cloud-based ERP solution that includes accounting functionality, automating core processes and providing real-time visibility.",
+      website: "https://www.netsuite.com/",
+      features: ["Cloud-based ERP", "Accounting functionality", "Automation", "Real-time visibility"],
+      pricing: "Contact for pricing",
+      trial: "Product tour available",
+      category: "Enterprise ERP",
+      isFree: false
+    },
+    {
+      name: "Sage Accounting",
+      description: "Offers a modern, user-friendly solution to streamline financial management for businesses of all sizes.",
+      website: "https://www.sage.com/",
+      features: ["Financial management", "Invoicing", "Expense tracking", "Reporting"],
+      pricing: "Paid plans starting from $25/month",
+      trial: "30-day free trial",
+      category: "Full Accounting Suite",
+      isFree: false
+    },
+    {
+      name: "Synder",
+      description: "AI-driven accounting infrastructure for retail, e-commerce, and SaaS businesses. Synchronizes data from e-commerce to accounting software.",
+      website: "https://synder.com/",
+      features: ["Multi-platform sync", "Accrual basis syncing", "Duplicate detection", "Sales reconciliation"],
+      pricing: "Starting from $35/month",
+      trial: "15-day free trial",
+      category: "E-commerce Integration",
+      isFree: false
+    },
+    {
+      name: "Patriot Accounting",
+      description: "Primarily a payroll software that offers basic and full-service payroll solutions, including payroll calculations and tax filings.",
+      website: "https://www.patriotsoftware.com/",
+      features: ["Payroll solutions", "Tax filings", "Direct deposit", "HR tools"],
+      pricing: "Starting from $17/month",
+      trial: "Free trial available",
+      category: "Payroll & Basic Accounting",
+      isFree: false
+    }
+  ],
+  documentTemplates: [
+    {
+      name: "Business Proposal Generator",
+      description: "Professional business proposal templates with Qatar-specific formatting",
+      category: "Business Documents"
+    },
+    {
+      name: "Rental Agreement Template",
+      description: "Qatar legal rental agreement generator with terms and conditions",
+      category: "Legal Documents"
+    },
+    {
+      name: "Invoice Templates",
+      description: "Professional invoice templates with VAT-ready formatting",
+      category: "Billing"
+    },
+    {
+      name: "MOCI Forms",
+      description: "Ministry of Commerce and Industry forms and templates",
+      category: "Government"
+    },
+    {
+      name: "Employment Contracts",
+      description: "Qatar labor law compliant employment contract templates",
+      category: "HR Documents"
+    },
+    {
+      name: "Financial Reports",
+      description: "Standard financial reporting templates for Qatar businesses",
+      category: "Financial Reports"
+    },
+    {
+      name: "Tax Documents",
+      description: "Tax preparation and filing document templates",
+      category: "Tax Planning"
+    },
+    {
+      name: "Budget Planner",
+      description: "Comprehensive budget planning worksheets and templates",
+      category: "Budgeting"
+    },
+    {
+      name: "Cash Flow Projections",
+      description: "Cash flow analysis and projection templates",
+      category: "Financial Planning"
+    }
+  ],
+  businessTools: [
+    {
+      name: "Business Plan Builder",
+      description: "Step-by-step business plan creation tool with Qatar market insights",
+      features: ["Market analysis", "Financial projections", "Executive summary", "Implementation timeline"]
+    },
+    {
+      name: "Salary Calculator",
+      description: "Calculate salaries according to Qatar labor law and WPS requirements",
+      features: ["WPS compliance", "End-of-service benefits", "Leave calculations", "Overtime calculations"]
+    },
+    {
+      name: "Currency Converter",
+      description: "Real-time currency conversion with QAR and international rates",
+      features: ["Real-time rates", "Historical data", "Multi-currency", "Rate alerts"]
+    },
+    {
+      name: "Project Timeline Creator",
+      description: "Create professional project timelines and Gantt charts",
+      features: ["Gantt charts", "Milestone tracking", "Resource allocation", "Progress monitoring"]
+    },
+    {
+      name: "Marketing Strategy Planner",
+      description: "Develop comprehensive marketing strategies for Qatar market",
+      features: ["Target audience analysis", "Channel planning", "Budget allocation", "ROI tracking"]
+    },
+    {
+      name: "Event Planner",
+      description: "Professional event planning tool with Qatar venue database",
+      features: ["Venue database", "Budget tracking", "Guest management", "Timeline planning"]
+    }
+  ]
+};
