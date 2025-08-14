@@ -187,9 +187,10 @@ const AccountingTools = () => {
       </Card>
 
       <Tabs defaultValue="calculators" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 mb-6">
+        <TabsList className="grid w-full grid-cols-3 mb-6">
           <TabsTrigger value="calculators">Business Calculators</TabsTrigger>
-          <TabsTrigger value="software">Software & Templates</TabsTrigger>
+          <TabsTrigger value="software">Software & Tools</TabsTrigger>
+          <TabsTrigger value="advanced">Advanced Tools</TabsTrigger>
         </TabsList>
 
         <TabsContent value="calculators" className="space-y-6">
